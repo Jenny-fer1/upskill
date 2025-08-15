@@ -1,0 +1,285 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #18181b;
+  color: #fff;
+  font-family: 'Inter', sans-serif, Arial, sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #b2b2b2;
+}
+
+/* Movie stats */
+.movie-stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stat-box {
+  background: #27272a;
+  flex: 1 1 140px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid #d90429;
+  min-width: 110px;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff2954;
+}
+
+.label {
+  font-size: 1rem;
+  margin-top: 6px;
+  color: #b2b2b2;
+}
+
+/* Bottom row */
+.bottom-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: #222;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px #0002;
+  min-width: 280px;
+}
+
+.smart-insight h3,
+.weekly-pattern h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.insight {
+  background: #18181b;
+  color: #d90429;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #dedede;
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+/* Recommendations */
+.recommendations {
+  background: #232324;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rec-card {
+  background: #252529;
+  border-radius: 8px;
+  padding: 12px 13px;
+  box-shadow: 0 1px 4px #0002;
+  flex: 1 1 170px;
+  min-width: 160px;
+}
+
+.rec-title {
+  color: #b7b7b7;
+  font-size: 0.95rem;
+}
+
+.rec-hint {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* Social Insights */
+.social-insights {
+  background: #232324;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 10px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 40px;
+  font-size: 1.03rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stat {
+  color: #ff2954;
+  font-weight: bold;
+  font-size: 1.3rem;
+  min-width: 80px;
+}
+
+.stat-label {
+  color: #b7b7b7;
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #313135;
+  margin: 18px 0;
+}
+
+.friend-activity {
+  color: #b8b8b8;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 720px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .movie-stats {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .stat-box {
+    flex: 1 1 120px;
+    min-width: 100px;
+    padding: 15px 10px;
+  }
+
+  .value {
+    font-size: 1.6rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    min-width: auto;
+    padding: 16px;
+  }
+
+  .smart-insight h3,
+  .weekly-pattern h3 {
+    font-size: 1rem;
+  }
+
+  .insight {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .recommendations {
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 14px;
+  }
+
+  .rec-card {
+    flex: 1 1 100%;
+    min-width: auto;
+    padding: 10px 12px;
+  }
+
+  .rec-title {
+    font-size: 0.85rem;
+  }
+
+  .rec-hint {
+    font-size: 1rem;
+  }
+
+  .social-insights {
+    padding: 16px 12px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stat {
+    font-size: 1.1rem;
+    min-width: auto;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  .friend-activity {
+    font-size: 0.9rem;
+  }
+
+  /* Canvas resize */
+  #barChart {
+    width: 100% !important;
+    height: 150px !important;
+  }
+}

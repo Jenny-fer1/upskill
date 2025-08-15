@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analytics Screen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Your Movie Journey</h2>
+    <p class="subtitle">Discover insights about your viewing habits and emotional patterns</p>
+
+    <section class="movie-stats">
+      <div class="stat-box">
+        <div class="value">145</div>
+        <div class="label">Movies watched</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">98</div>
+        <div class="label">Hours spent</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">Action</div>
+        <div class="label">Favorite Genre</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">Zendaya</div>
+        <div class="label">Favorite Actor</div>
+      </div>
+      <div class="stat-box">
+        <div class="value">Nostalgic</div>
+        <div class="label">Mood Matched</div>
+      </div>
+    </section>
+
+    <section class="bottom-row">
+      <div class="card smart-insight">
+        <h3>Smart Insight</h3>
+        <div class="insight">You mostly watch on Saturdays.</div>
+        <p>You watch more of Action than any other movie genre</p>
+        <p>Your friends’ favorite genre varies with you, although a few of them enjoy comedy a lot</p>
+      </div>
+
+      <div class="card weekly-pattern">
+        <h3>Weekly watch pattern</h3>
+        <canvas id="barChart" width="300" height="180"></canvas>
+      </div>
+    </section>
+
+    <section class="recommendations">
+      <div class="rec-card">
+        <div class="rec-title">For Your Next Binge Moment</div>
+        <div class="rec-hint">Hidden Gems in Action</div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-title">Weekly Watch Reminder</div>
+        <div class="rec-hint">Saturdays: Action Night</div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-title">Friend's Favorite</div>
+        <div class="rec-hint">Comedy</div>
+      </div>
+    </section>
+
+    <section class="social-insights">
+      <div class="stats-row">
+        <div>
+          <div class="stat">12</div>
+          <div class="stat-label">Active Friends</div>
+        </div>
+        <div>
+          <div class="stat">33</div>
+          <div class="stat-label">Movies Shared</div>
+        </div>
+        <div>
+          <div class="stat">8</div>
+          <div class="stat-label">Reviews Left</div>
+        </div>
+      </div>
+      <hr />
+      <div class="friend-activity">Recent Friend Activity</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
