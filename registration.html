@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registration.css">
-    <title>Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registration.css">
+  <title>Registration</title>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="images/Moments.svg" alt="logo">
-        </div>
-
-        <div class="right">
-            <div class="option">
-                <span class="circle"></span>
-                <p>Create an account with us</p>
-            </div>
-            <div class="option">
-                <span class="circle"></span>
-                <p>Already have an account?</p>
-            </div>
-
-            <a href="createAccount.html">
-                <button>Continue</button>
-            </a>
-
-            <p class="terms">
-                By signing in, you agree to our 
-                <a href="#">Terms of Use</a> and
-                <a href="#">Privacy Policy</a>.
-            </p>
-        </div>
+  <div class="container">
+    <div class="logo">
+      <img src="images/Moments.svg" alt="logo">
     </div>
+
+    <div class="right">
+  
+      <label class="option">
+        <input type="radio" name="choice" value="create" checked>
+        <span class="circle"></span>
+        <p>Create an account with us</p>
+      </label>
+
+      
+      <label class="option">
+        <input type="radio" name="choice" value="login">
+        <span class="circle"></span>
+        <p>Already have an account?</p>
+      </label>
+
+
+      <button id="continueBtn">Continue</button>
+
+      <p class="terms">
+        By signing in, you agree to our 
+        <a href="#">Terms of Use</a> and
+        <a href="#">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+
+
+  <script src="registration.js"></script>
 </body>
 </html>
